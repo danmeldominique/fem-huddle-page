@@ -33,7 +33,7 @@ export default function Home() {
       <Hero className='contained' />
       <div className='relative w-full h-96 my-16'>
         <Image src={screenMockups} alt="illustration" className='contained' />
-        <div className='grid grid-cols-2 my-24 contained'>
+        <div className='grid sm:grid-cols-2 my-24 contained'>
           {
             cards.map((card) => (
               <StatCard key={card.statistic} {...card} />
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
         <div className='flex flex-col justify-center items-center my-48'>
           <h1 className='font-poppins font-bold text-3xl text-center my-8'>Ready To Build Your Community?</h1>
-          <CustomButton solid={true} text='Get Started For Free' className='px-16 py-3 mt-3 shadow-md w-fit'/>
+          <CustomButton solid={true} text='Get Started For Free' className='px-8 sm:px-16 text-sm sm:text-base py-3 mt-12 shadow-md'/>
         </div>
         <Footer />
       </div>

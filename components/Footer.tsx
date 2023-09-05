@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className='flex flex-col relative'>
         <Image src={FooterTop} alt="footer top" className='w-full' />
-        <div className='flex flex-row bg-VeryDarkCyan gap-x-6 justify-around py-6'>
+        <div className='flex flex-col sm:flex-row bg-VeryDarkCyan gap-x-6 justify-around py-6'>
         <CompanyInfo />
         <Newsletter />
         </div>

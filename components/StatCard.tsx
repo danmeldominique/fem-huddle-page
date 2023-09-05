@@ -10,10 +10,10 @@ type StatCardProps = {
 
 export default function StatCard({imageName, statistic, text} : StatCardProps) {
   return (
-    <div className='flex flex-col w-fit justify-self-center'>
+    <div className='flex flex-col w-fit justify-self-center my-16'>
         <Image src={imageName} alt='communities' width='30' height='30' />
         <h1 className='font-bold text-6xl font-poppins my-3'>{statistic}</h1>
-        <p className='text-gray-500 font-openSans text-center'>{text}</p>
+        <p className='text-gray-500 font-openSans text-center  sm:text-base'>{text}</p>
     </div>
   )
 }
